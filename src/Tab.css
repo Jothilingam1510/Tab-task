@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.Numbers {
+  margin-left: 20px;
+  margin-top: 30px;
+}
+
+.box {
+  margin-top: 10px;
+}
+.box .tab {
+  border-radius: 5px;
+}
+
+.active-item {
+  margin-top: 20px;
+  font-size: x-large;
+}/*# sourceMappingURL=Tab.css.map */
