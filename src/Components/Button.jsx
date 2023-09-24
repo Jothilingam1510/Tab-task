@@ -1,17 +1,18 @@
+// Button.js
 import React from 'react';
 import './Button.css';
 
 function Button(props) {
-  const { label, tabValue, setActiveItem } = props;
+  const { label, tabValue, isActive, onClick } = props;
 
-  const handleButtonClick = () => {
-    // Call setActiveItem to set the active item label and tab value
-    setActiveItem(label, tabValue);
-    // alert(`Button for ${label} clicked!`);  
+  const handleClick = () => {
+    onClick(tabValue);
   };
 
+  const buttonClassName = isActive ? 'button active' : 'button';
+
   return (
-    <button className='button' onClick={handleButtonClick}>
+    <button className={buttonClassName} onClick={handleClick}>
       {label}
     </button>
   );

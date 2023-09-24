@@ -15,4 +15,9 @@
   background-color: rgb(241, 46, 46);
   color: white;
   font-size: 15px;
+}
+
+.button.active {
+  background-color: rgb(0, 0, 0); /* Set the background color for the selected button */
+  color: rgb(255, 255, 255); /* Set the text color for the selected button */
 }/*# sourceMappingURL=Button.css.map */
